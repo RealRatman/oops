@@ -1,0 +1,4 @@
+javac -cp lib/junit-platform-console-standalone-1.10.0.jar *.java
+java -jar lib/junit-platform-console-standalone-1.10.0.jar --class-path . --scan-class-path
+javac AdvancedArrayListOps.java
+java AdvancedArrayListOps
