@@ -84,6 +84,74 @@ public class AdvancedArrayListOps{
         System.out.println(strl);
     }
     public static void main(String[] args) throws Exception {
-        //just because
+        Scanner sc = new Scanner(System.in);
+        AdvancedArrayListOps op = new AdvancedArrayListOps();
+        int choice;
+        while (true) {
+            System.out.print("\n1. append\n2. insert\n3. search\n4. starts with a letter\n5. sort alphabetically upwards\n6. sort alphabetically downwards\n7. remove dupes\n8. partial search\n9. regex case insensitive\n10. display\n11. exit\n");
+            System.out.print("Enter your choice: ");
+            choice = sc.nextInt();
+            if (choice == 1){
+                String temp;
+                System.out.print("Enter the value to be appended: ");
+                temp=sc.next();
+                op.append(temp);
+            }
+            else if (choice == 2){
+                String temp;
+                System.out.print("Enter the value to be inserted: ");
+                temp=sc.next();
+                int pos;
+                System.out.print("Enter the position: ");
+                pos=sc.nextInt();
+                op.insert(pos, temp);
+            }
+            else if (choice == 3){
+                String temp;
+                System.out.print("Enter the value to be searched for: ");
+                temp=sc.next();
+                System.out.println(op.search(temp));
+            }
+            else if (choice == 4){
+                String temp;
+                System.out.print("Enter the letter: ");
+                temp=sc.next();
+                System.out.print(op.letter(temp));
+            }
+            else if (choice == 5){
+                op.sortup();
+                System.out.println("sorted upwards alphabetically");
+            }
+            else if (choice == 6){
+                op.sortdown();
+                System.out.println("sorted downards alphabetically");
+            }
+            else if (choice == 7){
+                op.dupe();
+                System.out.println("dupes have been deleted");  
+            }
+            else if (choice == 8){
+                String temp;
+                System.out.print("Enter the string to be searched for: ");
+                temp=sc.next();
+                System.out.println(op.partialMatch(temp));
+            }
+            else if (choice == 9){
+                String temp;
+                System.out.print("Enter the string to be searched for: ");
+                temp=sc.next();
+                System.out.println(op.regexSearch(temp));
+            }
+            else if (choice == 10){
+                op.display();
+            }
+            else if (choice == 11){
+                break;
+            }
+            else{
+                System.out.println("invalid choice");
+            }
+            System.out.println();
+        }
     }
 }

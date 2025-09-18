@@ -1,13 +1,17 @@
 import static org.junit.jupiter.api.Assertions.*;
-import java.util.*;
-import org.junit.*;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.BeforeEach;
 
 public class AdvancedArrayListOpsTest {
 
-    private AdvancedArrayListOps ops;
+    public AdvancedArrayListOps ops;
 
     @BeforeEach
-    public void setup() {
+    public void set() {
         ops = new AdvancedArrayListOps();
         ops.append("Apple");
         ops.append("Banana");
@@ -24,10 +28,9 @@ public class AdvancedArrayListOpsTest {
     }
 
     @Test
-    public void testSortAndLetterFilter() {
+    public void caseAndLetter() {
         ops.sortup();
-        ArrayList<String> startsWithA = ops.letter("a");
-        assertEquals(Arrays.asList("Apple", "apricot"), startsWithA);
+        ArrayList<String> A = ops.letter("a");
+        assertEquals(Arrays.asList("Apple", "apricot"), A);
     }
-
-    @Test
+}
