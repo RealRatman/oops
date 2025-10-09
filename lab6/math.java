@@ -35,8 +35,13 @@ public class math {
         System.setOut(both);
 
         mathOperations m=new mathOperations();
-        System.out.println(m.sum(1, 2));
+        Object[] temp;
+        int c=0;
+        while(c!=2){
+
+        }
+        /*System.out.println(m.sum(1, 2));
         System.out.println(m.sum(1.1, 2.2, 3.3));
-        System.out.println(m.sum(1, 2, 3, 4, 5, 6, 7, 8, 9, 10));
+        System.out.println(m.sum(1, 2, 3, 4, 5, 6, 7, 8, 9, 10));*/
     }
 }
