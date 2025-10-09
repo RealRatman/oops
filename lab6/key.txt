@@ -1,4 +1,4 @@
 acic-> 6a
 moat-> 6b
 math-> 6c
-in math, instanceOf perhaps
+in math, instanceOf perhaps, finish later
