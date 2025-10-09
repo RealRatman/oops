@@ -1,4 +1,4 @@
 acic-> 6a
 moat-> 6b
 math-> 6c
-in math, object arraylist->converts to array, maybe instanceOf? finish later
+math is hardcoded, trialmath has unfinished userinput
